@@ -13,9 +13,9 @@ saisie=prompt('veuillez entrer un nombre : ');
 saisieInt=parseInt(saisie);
 console.log(saisieInt);
 
-if(saisie!=0){
-    while(saisie!=0) {  
-      
+if(!saisie){
+    while(saisie!=0) {
+
         numbers.push(saisieInt);
         saisie=prompt('veuillez entrer un nombre : ');
         saisieInt=parseInt(saisie);
@@ -24,7 +24,7 @@ if(saisie!=0){
         total++;
         moyenne= somme/total;
     };
-     
+
     max=numbers[0];
     min=numbers[0];
 
@@ -35,12 +35,12 @@ if(saisie!=0){
 
         if(min>numbers[i]) {
             min = numbers[i];
-        };  
-    } 
-     
-  
-    
-   
+        };
+    }
+
+
+
+
 console.log(total,' nombres saisis \n','Compris entre  ', min, ' et  ', max, '\n Pour une somme de  ', somme, '\n et une moyenne de  ', moyenne);
 alert(total+' nombres saisis \n'+'Compris entre  '+ min+ ' et  '+ max+ '\n Pour une somme de  '+ somme+'\n et une moyenne de  '+ moyenne)
 }
